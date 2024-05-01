@@ -151,7 +151,7 @@
 			display-name = "Custom";                                          \
 			bindings = <                                               \
 				LEADING_NONES                                          \
-				&kp C_PLAY      &kp C_MUTE  &kp C_VOL_UP  &none               \
+				&kp C_PLAY_PAUSE      &kp C_MUTE  &kp C_VOL_UP  &none               \
 				MIDDLE_NONES                                           \
 				&kp C_PREV      &kp C_NEXT  &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
 				TRAILING_NONES                                         \
