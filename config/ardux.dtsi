@@ -435,6 +435,7 @@
 				TRAILING_NONES
 			>;
 		};
+		ARDUX_LAYER_CUSTOM
 		copy {
 			display-name = "Copy";
 			bindings = <
@@ -445,7 +446,6 @@
 				TRAILING_NONES
 			>;
 		};
-		ARDUX_LAYER_CUSTOM
 		#if defined ARDUX_BIG
 		big_ardux_symbol {
 			display-name = "*Symbol*";
