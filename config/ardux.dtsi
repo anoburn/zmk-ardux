@@ -180,11 +180,11 @@
 #define ARDUX_BASE_A DE_A
 #define ARDUX_BASE_R DE_R
 #define ARDUX_BASE_T DE_T
-#define ARDUX_BASE_S DE_SPACE
+#define ARDUX_BASE_S DE_O
 #define ARDUX_BASE_E DE_E
 #define ARDUX_BASE_Y DE_S
 #define ARDUX_BASE_I DE_I
-#define ARDUX_BASE_O DE_O
+#define ARDUX_BASE_O DE_SPACE
 #define ARDUX_COMBO_N DE_N
 #if ARDUX_COLEMAK
 #define ARDUX_BASE_A T
