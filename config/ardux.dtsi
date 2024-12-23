@@ -308,7 +308,7 @@
 		ctrl_alt_kp: ctrl_alt_kp { compatible = "zmk,behavior-hold-tap"; display-name = "ctrl_alt_kp";
 						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&sk>, <&sk>; };
-		mht: mod_hold_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; tapping-term-ms = <1500>;
+		mht: mod_hold_tap { compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; tapping-term-ms = <800>;
 						flavor = "hold-preferred"; bindings = <&kp>, <&sk>; hold-while-undecided-linger;};
 	};
 };
