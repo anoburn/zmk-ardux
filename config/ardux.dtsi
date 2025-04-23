@@ -388,11 +388,11 @@
 			display-name = "*ARDUX*";
 			bindings = <
 				BIG_LEADING_NONES
-				&kp MINUS            &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A    &kp ARDUX_BASE_R     &kp ARDUX_BASE_T     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
+				&kp DE_MINUS    &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A    &kp ARDUX_BASE_R    &layer_media_kp LAYER_ID_MEDIA ARDUX_BASE_T    &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
 				BIG_BETWEEN_ROW_ONE_TWO_NONES
-				&sk LSHFT            &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                  &kp ARDUX_BASE_Y     &kp ARDUX_BASE_I     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O
+				&sk LSHFT       &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                  &kp ARDUX_BASE_Y    &layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I      &layer_navigation_kp LAYER_ID_NAVIGATION ARDUX_BASE_O
 				BIG_BETWEEN_ROW_TWO_THREE_NONES
-				&kp TAB              &kp EQUAL                                                         &kp DEL               &kp AT                &ctrl_alt_kp LALT LCTRL
+				&kp TAB              &kp DE_EQUAL                                                &kp DEL             &kp DE_AT                                      &ctrl_alt_kp LALT LCTRL
 				BIG_BETWEEN_ROW_THREE_THUMBS
 				&kp ENTER            &kp SPACE                                                         &mo LAYER_ID_BIG_SYM
 				BIG_TRAILING_NONES
@@ -530,11 +530,11 @@
 			display-name = "*ARDUX*";
 			bindings = <
 				BIG_LEADING_NONES
-				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S    &kp ARDUX_BASE_T     &kp ARDUX_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A &kp MINUS
+				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S    &layer_media_kp LAYER_ID_MEDIA ARDUX_BASE_T     &kp ARDUX_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A &kp DE_MINUS
 				BIG_BETWEEN_ROW_ONE_TWO_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O      &kp ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E               &sk LSHFT
+				&layer_navigation_kp LAYER_ID_NAVIGATION ARDUX_BASE_O      &layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E               &sk LSHFT
 				BIG_BETWEEN_ROW_TWO_THREE_NONES
-				&ctrl_alt_kp LALT LCTRL                             &kp AT                &kp DEL               &kp EQUAL                                                      &kp TAB
+				&ctrl_alt_kp LALT LCTRL                             &kp DE_AT                &kp DEL               &kp DE_EQUAL                                                      &kp TAB
 				BIG_BETWEEN_ROW_THREE_THUMBS
 				&mo LAYER_ID_BIG_SYM                                &kp SPACE             &kp ENTER
 				BIG_TRAILING_NONES
@@ -559,9 +559,9 @@
 			display-name = "Number";
 			bindings = <
 				LEADING_NONES
-				&mo LAYER_ID_NUMBERS                        &kp N3    &kp N2    &kp N1
+				&mo LAYER_ID_NUMBERS                        &kp DE_N3    &kp DE_N2    &kp DE_N1
 				MIDDLE_NONES
-				&none                                       &kp N6    &kp N5    &kp N4
+				&none                                       &kp DE_N6    &kp DE_N5    &kp DE_N4
 				TRAILING_NONES
 			>;
 		};
@@ -569,9 +569,9 @@
 			display-name = "Symbol";
 			bindings = <
 				LEADING_NONES
-				&kp GRAVE                                   &kp SEMI  &kp BSLH  &kp EXCL
+				&kp DE_DEGREE                               &kp DE_PERCENT  &kp DE_STAR  &kp none
 				MIDDLE_NONES
-				&kp EQUAL                                   &kp MINUS &kp QMARK &mo LAYER_ID_SYMBOLS
+				&kp DE_CARET                                &kp DE_AT       &kp DE_PLUS  &mo LAYER_ID_SYMBOLS
 				TRAILING_NONES
 			>;
 		};
@@ -579,9 +579,9 @@
 			display-name = "Paren";
 			bindings = <
 				LEADING_NONES
-				&kp LBRC                                    &kp LPAR  &kp RPAR  &mo LAYER_ID_PARENTHETICALS
+				&kp DE_LBRC                                    &kp DE_LBKT  &kp DE_LPAR  &mo LAYER_ID_PARENTHETICALS
 				MIDDLE_NONES
-				&kp RBRC                                    &kp LBKT  &kp RBKT  &none
+				&kp DE_RBRC                                    &kp DE_RBKT  &kp DE_RPAR  &none
 				TRAILING_NONES
 			>;
 		};
@@ -589,9 +589,9 @@
 			display-name = "Nav";
 			bindings = <
 				LEADING_NONES
-				&kp PG_UP                                   &kp HOME  &kp UP    &kp END
+				&kp PG_UP                                   &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)
 				MIDDLE_NONES
-				&kp PG_DN                                   &kp LEFT  &kp DOWN  &kp RIGHT
+				&mo LAYER_ID_NAVIGATION                     &kp LEFT      &kp DOWN  &kp RIGHT
 				TRAILING_NONES
 			>;
 		};
@@ -602,6 +602,26 @@
 				ARDUX_BT_TOP    &bt BT_SEL 2 &bt BT_SEL 1 &bt BT_SEL 0
 				MIDDLE_NONES
 				ARDUX_BT_BOTTOM &bt BT_SEL 5 &bt BT_SEL 4 &bt BT_SEL 3
+				TRAILING_NONES
+			>;
+		};
+		media {
+			display-name = "Media";
+			bindings = <
+				LEADING_NONES
+				&kp C_VOL_UP    &mo LAYER_ID_MEDIA    &kp C_MUTE   &kp C_PLAY_PAUSE
+				MIDDLE_NONES
+				&kp C_VOL_DN    &none                 &kp C_PREV   &kp C_NEXT
+				TRAILING_NONES
+			>;
+		};
+		copy {
+			display-name = "Copy";
+			bindings = <
+				LEADING_NONES
+				&none           &none                &kp LC(DE_V)    &kp LC(DE_C)
+				MIDDLE_NONES
+				&kp LC(DE_Z)    &mo LAYER_ID_COPY    &kp LC(DE_Y)    &kp LC(DE_X)
 				TRAILING_NONES
 			>;
 		};
