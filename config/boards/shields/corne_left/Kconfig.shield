@@ -7,5 +7,5 @@ config SHIELD_CORNE_ARDUX_LEFT
 config SHIELD_CORNE_5_COL_ARDUX_LEFT
 	def_bool $(shields_list_contains,corne_5_col_ardux_left)
 
-config SHIELD_CORNE_5_COL_ARDUX_LEFT_BIG
-	def_bool $(shields_list_contains,corne_5_col_ardux_left_big)
+config SHIELD_CORNE_5_COL_BIG_ARDUX_LEFT
+	def_bool $(shields_list_contains,corne_5_col_big_ardux_left)

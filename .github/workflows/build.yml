@@ -14,9 +14,9 @@ jobs:
           - board: nice_nano_v2
             shield: the_paintbrush_right
           - board: nice_nano_v2
-            shield: corne_5_col_ardux_left_big
+            shield: corne_5_col_big_ardux_left
           - board: nice_nano_v2
-            shield: corne_5_col_ardux_right_big
+            shield: corne_5_col_big_ardux_right
     steps:
       - name: Checkout
         uses: actions/checkout@v4
