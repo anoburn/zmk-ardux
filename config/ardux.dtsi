@@ -569,7 +569,7 @@
 			display-name = "Symbol";
 			bindings = <
 				LEADING_NONES
-				&kp DE_DEGREE                               &kp DE_PERCENT  &kp DE_STAR  &kp none
+				&kp DE_DEGREE                               &kp DE_PERCENT  &kp DE_STAR  &none
 				MIDDLE_NONES
 				&kp DE_CARET                                &kp DE_AT       &kp DE_PLUS  &mo LAYER_ID_SYMBOLS
 				TRAILING_NONES
