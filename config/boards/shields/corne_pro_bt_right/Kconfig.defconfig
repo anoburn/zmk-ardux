@@ -1,7 +1,7 @@
 if SHIELD_CORNE_PRO_BT_ARDUX_RIGHT
 
 config ZMK_KEYBOARD_NAME
-	default "ARDUX R"
+	default "Corne ARDUX R"
 
 config I2C
 	default y
