@@ -1,5 +1,3 @@
 build:
-  include:
-    - config/custom_naming.c
   cmake-includes:
     - config/zmk-user-module.cmake
