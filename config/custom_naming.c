@@ -1,6 +1,6 @@
-#include <dt-bindings/zmk/event_manager.h>
-#include <dt-bindings/zmk/events/bt_profile_changed.h>
-#include <dt-bindings/zmk/ble.h>
+#include <zmk/event_manager.h>
+#include <zmk/events/bt_profile_changed.h>
+#include <zmk/ble.h>
 #include <stdio.h>
 
 static void update_ble_name(uint8_t profile_index) {
