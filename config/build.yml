@@ -1,3 +1,0 @@
-build:
-  cmake-includes:
-    - config/zmk-user-module.cmake
