@@ -372,12 +372,18 @@
 		mht: mod_hold_tap { compatible = "zmk,behavior-hold-tap"; display-name = "ctrl"; #binding-cells = <2>;
 						tapping-term-ms = <400>; flavor = "hold-preferred"; bindings = <&kp>, <&sk>;
 						hold-while-undecided-linger;};
-		bt_profile_change_with_disconnect: bt_profile_change_with_disconnect {
-						compatible = "zmk,behavior-macro-one-param";
-            #binding-cells = <1>;
-            bindings = <&macro_param_1to1>, <&bt BT_SEL MACRO_PLACEHOLDER>, <&macro_wait_time 100>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;
-            label = "BT_DISC"; 
-            };
+		bt_profile_0: bt_profile_0 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+						bindings = <&bt BT_SEL 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
+		bt_profile_1: bt_profile_1 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+						bindings = <&bt BT_SEL 1>, <&bt BT_DISC 0>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
+		bt_profile_2: bt_profile_2 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+						bindings = <&bt BT_SEL 2>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
+		bt_profile_3: bt_profile_3 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+						bindings = <&bt BT_SEL 3>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
+		bt_profile_4: bt_profile_4 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+						bindings = <&bt BT_SEL 4>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 5>;};
+		bt_profile_5: bt_profile_5 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
+						bindings = <&bt BT_SEL 5>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>;};
 	};
 };
 
@@ -463,9 +469,9 @@
 			display-name = "BT";
 			bindings = <
 				LEADING_NONES
-				&bt_profile_change_with_disconnect 0 &bt_profile_change_with_disconnect 1 &bt_profile_change_with_disconnect 2 ARDUX_BT_TOP
+				&bt_profile_0 &bt_profile_1 &bt_profile_2 ARDUX_BT_TOP
 				MIDDLE_NONES
-				&bt_profile_change_with_disconnect 3 &bt_profile_change_with_disconnect 4 &bt_profile_change_with_disconnect 5 ARDUX_BT_BOTTOM
+				&bt_profile_3 &bt_profile_4 &bt_profile_5 ARDUX_BT_BOTTOM
 				TRAILING_NONES
 			>;
 		};
