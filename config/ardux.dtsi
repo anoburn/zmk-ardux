@@ -373,17 +373,17 @@
 						tapping-term-ms = <400>; flavor = "hold-preferred"; bindings = <&kp>, <&sk>;
 						hold-while-undecided-linger;};
 		bt_profile_0: bt_profile_0 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-						bindings = <&bt BT_SEL 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
+						bindings = <&bt BT_SEL 0>, <&macro_wait_time 100>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
 		bt_profile_1: bt_profile_1 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-						bindings = <&bt BT_SEL 1>, <&bt BT_DISC 0>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
+						bindings = <&bt BT_SEL 1>, <&macro_wait_time 100>, <&bt BT_DISC 0>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
 		bt_profile_2: bt_profile_2 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-						bindings = <&bt BT_SEL 2>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
+						bindings = <&bt BT_SEL 2>, <&macro_wait_time 100>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 3>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
 		bt_profile_3: bt_profile_3 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-						bindings = <&bt BT_SEL 3>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
+						bindings = <&bt BT_SEL 3>, <&macro_wait_time 100>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 4>, <&bt BT_DISC 5>;};
 		bt_profile_4: bt_profile_4 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-						bindings = <&bt BT_SEL 4>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 5>;};
+						bindings = <&bt BT_SEL 4>, <&macro_wait_time 100>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 5>;};
 		bt_profile_5: bt_profile_5 {compatible = "zmk,behavior-macro"; #binding-cells = <0>;
-						bindings = <&bt BT_SEL 5>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>;};
+						bindings = <&bt BT_SEL 5>, <&macro_wait_time 100>, <&bt BT_DISC 0>, <&bt BT_DISC 1>, <&bt BT_DISC 2>, <&bt BT_DISC 3>, <&bt BT_DISC 4>;};
 	};
 };
 
