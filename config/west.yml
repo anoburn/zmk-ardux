@@ -1,13 +1,18 @@
 manifest:
   remotes:
-    - name: anoburn
-      url-base: https://github.com/anoburn
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
     - name: zmk-ardux
       url-base: https://github.com/arduxio
+    - name: mcrosson
+      url-base: https://github.com/mcrosson
   projects:
     - name: zmk
-      remote: anoburn
-      revision: custom_device_name
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
+    - name: zmk-dynamic-bt-profile-names
+      remote: mcrosson
+      revision: main
   self:
     path: config
