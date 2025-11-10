@@ -383,7 +383,7 @@
 						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&mo>, <&kp>; };
 		mht: mod_hold_tap { compatible = "zmk,behavior-hold-tap"; display-name = "ctrl"; #binding-cells = <2>;
-						tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "hold-preferred"; bindings = <&kp>, <&sk>;
+						tapping-term-ms = <400>; flavor = "hold-preferred"; bindings = <&kp>, <&sk>;
 						hold-while-undecided-linger;};
 	};
 };
