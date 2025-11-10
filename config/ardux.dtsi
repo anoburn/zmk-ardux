@@ -279,7 +279,7 @@
 		combo_slash     { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_T>; bindings = <&kp DE_SLASH>; };
 		combo_backslash { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_I>; bindings = <&kp DE_BACKSLASH>; };
 
-		combo_shifttab { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&mo SHIFT &kp TAB>; };
+		combo_shifttab { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp SHIFT(TAB)>; };
 		combo_equal    { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp DE_EQUAL>; };
 		combo_dollar   { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp DE_DOLLAR>; };
 		combo_hash     { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp DE_HASH>; };
@@ -444,9 +444,9 @@
 			display-name = "Nav";
 			bindings = <
 				LEADING_NONES
-				&mo LCTRL &kp LEFT                        &kp UP          &mo LCTRL &kp RIGHT     &kp PG_UP
+				&kp LCTRL(kp LEFT)                      &kp UP          &kp LCTRL(kp RIGHT)     &kp PG_UP
 				MIDDLE_NONES
-				&kp LEFT                                  &kp DOWN        &kp RIGHT               &kp PG_DN
+				&kp LEFT                                &kp DOWN        &kp RIGHT               &kp PG_DN
 				TRAILING_NONES
 			>;
 		};
