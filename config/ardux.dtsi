@@ -217,7 +217,7 @@
 #define LAYER_ID_NAVIGATION 4
 #define LAYER_ID_BT_SEL 5
 #define LAYER_ID_MOUSE 6
-#define LAYER_ID_CUSTOM 7
+#define LAYER_ID_MEDIA 7
 #define LAYER_ID_COPY 8
 #define LAYER_ID_BIG_SYM 9
 #define LAYER_ID_BIG_FUNCTION 10
@@ -316,6 +316,9 @@
 		combo_comma2        { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_Y KEY_I>; bindings = <&kp DE_COMMA>; };
 
 		combo_tilde        { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_T KEY_S>; bindings = <&kp DE_TILDE>; };
+
+		combo_pgup         { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp PG_UP>; };
+		combo_pgdown       { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_Y KEY_I>; bindings = <&kp PG_DN>; };
 		
 		/*****************************************
 		 * 4 key combos
@@ -346,6 +349,12 @@
 						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&mo>, <&kp>; };
 		layer_parentheticals_kp: layer_parentheticals_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_parentheticals_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		layer_navigation_kp: layer_navigation_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_navigation_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		layer_media_kp: layer_media_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_media_kp";
 						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&mo>, <&kp>; };
 		layer_custom_kp: layer_custom_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_custom_kp";
@@ -388,9 +397,9 @@
 			display-name = "ARDUX";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &kp ARDUX_BASE_T                              &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &layer_media_kp LAYER_ID_MEDIA ARDUX_BASE_T   &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
 				MIDDLE_NONES
-				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                &kp ARDUX_BASE_Y     &layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O
+				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                &kp ARDUX_BASE_Y     &layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I     &layer_navigation_kp LAYER_ID_NAVIGATION ARDUX_BASE_O
 				TRAILING_NONES
 				#if defined CUSTOM_THUMB
 				CUSTOM_THUMB
@@ -449,9 +458,19 @@
 			display-name = "Nav";
 			bindings = <
 				LEADING_NONES
-				&kp LC(LEFT)                      &kp UP          &kp LC(RIGHT)     &kp PG_UP
+				&kp LC(LEFT)                      &kp UP          &kp LC(RIGHT)     &none
 				MIDDLE_NONES
-				&kp LEFT                             &kp DOWN        &kp RIGHT            &kp PG_DN
+				&kp LEFT                          &kp DOWN        &kp RIGHT         &mo LAYER_ID_NAVIGATION
+				TRAILING_NONES
+			>;
+		};
+		media {
+			display-name = "Media";
+			bindings = <
+				LEADING_NONES
+				&kp C_PLAY_PAUSE    &kp C_MUTE    &mo LAYER_ID_MEDIA   &kp C_VOL_UP
+				MIDDLE_NONES
+				&kp C_PREV          &kp C_NEXT    &none                &kp C_VOL_DN
 				TRAILING_NONES
 			>;
 		};
@@ -492,7 +511,6 @@
 				TRAILING_NONES
 			>;
 		};
-		ARDUX_LAYER_CUSTOM
 		copy {
 			display-name = "Copy";
 			bindings = <
