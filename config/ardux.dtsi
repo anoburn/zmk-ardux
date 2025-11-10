@@ -309,6 +309,7 @@
 		combo_ae           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_R KEY_T>; bindings = <&kp DE_A_UMLAUT>; };
 		combo_oe           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_T KEY_S>; bindings = <&kp DE_O_UMLAUT>; };
 		combo_ue           { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_R KEY_S>; bindings = <&kp DE_U_UMLAUT>; };
+		combo_shiftenter   { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_S KEY_E>; bindings = <&kp LS(ENTER)>; };
 
 		combo_exclamation2  { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_T KEY_S>; bindings = <&kp DE_EXCL>; };
 
