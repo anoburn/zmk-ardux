@@ -218,8 +218,9 @@
 #define LAYER_ID_BT_SEL 5
 #define LAYER_ID_MOUSE 6
 #define LAYER_ID_CUSTOM 7
-#define LAYER_ID_BIG_SYM 8
-#define LAYER_ID_BIG_FUNCTION 9
+#define LAYER_ID_COPY 8
+#define LAYER_ID_BIG_SYM 9
+#define LAYER_ID_BIG_FUNCTION 10
 
 /*****************************************
  * Standard ARDUX combo definitions
@@ -353,6 +354,9 @@
 		ctrl_alt_kp: ctrl_alt_kp { compatible = "zmk,behavior-hold-tap"; display-name = "ctrl_alt_kp";
 						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&sk>, <&sk>; };
+		layer_copy_kp: layer_copy_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_copy_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
 	};
 };
 
@@ -384,9 +388,9 @@
 			display-name = "ARDUX";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &kp ARDUX_BASE_T     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &kp ARDUX_BASE_T                              &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
 				MIDDLE_NONES
-				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                &kp ARDUX_BASE_Y     &kp ARDUX_BASE_I     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O
+				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                &kp ARDUX_BASE_Y     &layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O
 				TRAILING_NONES
 				#if defined CUSTOM_THUMB
 				CUSTOM_THUMB
@@ -485,6 +489,16 @@
 				&mkp LCLK                                        &mmv MOVE_UP    &mkp RCLK        &msc SCRL_UP
 				MIDDLE_NONES
 				&mmv MOVE_LEFT                                   &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_DOWN
+				TRAILING_NONES
+			>;
+		};
+		copy {
+			display-name = "Copy";
+			bindings = <
+				LEADING_NONES
+				&kp LC(DE_C)    &kp LC(DE_V)    &none                &none
+				MIDDLE_NONES
+				&kp LC(DE_X)    &kp LC(DE_Z)    &mo LAYER_ID_COPY    &kp LC(DE_Y)
 				TRAILING_NONES
 			>;
 		};
