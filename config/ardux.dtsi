@@ -294,6 +294,8 @@
 		combo_back     { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp C_AC_BACK>; };
 		combo_forward  { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp C_AC_FORWARD>; };
 
+		combo_exit_mouse  { layers = <LAYER_ID_MOUSE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_T>; bindings = <&tog LAYER_ID_MOUSE>; };
+
 		combo_copy_cmd  { layers = <LAYER_ID_COPY>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_E>; bindings = <&kp LC(INS)>; };
 		combo_paste_cmd { layers = <LAYER_ID_COPY>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp LS(INS)>; };
 
