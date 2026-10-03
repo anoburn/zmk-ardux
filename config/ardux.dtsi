@@ -326,6 +326,7 @@
 		combo_comma2        { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_Y KEY_I>; bindings = <&kp DE_COMMA>; };
 
 		combo_tilde        { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_R KEY_T KEY_S>; bindings = <&kp DE_TILDE>; };
+		combo_grave        { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_Y KEY_I KEY_O>; bindings = <&kp DE_GRAVE>; };
 
 		combo_pgup         { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_A KEY_R KEY_T>; bindings = <&kp PG_UP>; };
 		combo_pgdown       { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_Y KEY_I>; bindings = <&kp PG_DN>; };
