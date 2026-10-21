@@ -1,0 +1,19 @@
+if SHIELD_CORNE_BT_PRO_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Corne BT Pro"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_CORNE_BT_PRO_LEFT || SHIELD_CORNE_BT_PRO_RIGHT
+
+config I2C
+	default y
+
+config ZMK_SPLIT
+    default y
+
+endif

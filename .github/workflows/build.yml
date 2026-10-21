@@ -13,6 +13,10 @@ jobs:
         include:
           - board: nice_nano_v2
             shield: the_paintbrush_right
+          - board: nice_nano_v2
+            shield: corne_bt_pro_right
+          - board: nice_nano_v2
+            shield: corne_bt_pro_left
     steps:
       - name: Checkout
         uses: actions/checkout@v4
