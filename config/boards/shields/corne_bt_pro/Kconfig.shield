@@ -1,5 +1,0 @@
-config SHIELD_CORNE_BT_PRO_LEFT
-    def_bool $(shields_list_contains,corne_bt_pro_left)
-
-config SHIELD_CORNE_BT_PRO_RIGHT
-    def_bool $(shields_list_contains,corne_bt_pro_right)

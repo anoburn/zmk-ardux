@@ -1,4 +1,4 @@
-if SHIELD_CORNE_BT_PRO_LEFT
+if BOARD_CORNE_BT_PRO_LEFT
 
 config ZMK_KEYBOARD_NAME
     default "Corne BT Pro"
@@ -8,7 +8,10 @@ config ZMK_SPLIT_ROLE_CENTRAL
 
 endif
 
-if SHIELD_CORNE_BT_PRO_LEFT || SHIELD_CORNE_BT_PRO_RIGHT
+if BOARD_CORNE_BT_PRO_LEFT || BOARD_CORNE_BT_PRO_RIGHT
+
+config BOARD
+	default "corne_bt_pro"
 
 config I2C
 	default y
