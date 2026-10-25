@@ -14,24 +14,14 @@
 		compatible = "zmk,keymap";
 		base {
 			display-name = "*ARDUX*";
-			/*bindings = <
-				&none	&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S			&layer_media_kp LAYER_ID_MEDIA ARDUX_BASE_T		&kp ARDUX_BASE_R	&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A	&kp DE_MINUS	&kp DE_MINUS    &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A    &kp ARDUX_BASE_R   &layer_media_kp LAYER_ID_MEDIA ARDUX_BASE_T    &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S	&none
-				BIG_BETWEEN_ROW_ONE_TWO_NONES
-				&none	&layer_navigation_kp LAYER_ID_NAVIGATION ARDUX_BASE_O	&layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I		&kp ARDUX_BASE_Y	&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E					&sk LSHFT		&sk LSHFT       &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                  &kp ARDUX_BASE_Y	&layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I      &layer_navigation_kp LAYER_ID_NAVIGATION ARDUX_BASE_O &none
-				BIG_BETWEEN_ROW_TWO_THREE_NONES
-				&none	&ctrl_alt_kp LALT LCTRL									&kp DE_AT										&kp DEL				&kp DE_EQUAL													&kp TAB			&kp TAB			&kp DE_EQUAL                                                	&kp DEL				&kp DE_AT                                      &ctrl_alt_kp LALT LCTRL	&none
-				BIG_BETWEEN_ROW_THREE_THUMBS
-				&mo LAYER_ID_BIG_SYM			&kp SPACE		&kp ENTER	&kp ENTER		&kp SPACE		&mo LAYER_ID_BIG_SYM
-				BIG_TRAILING_NONES
-			>;*/
 			bindings = <
-				&kp DE_A	&kp DE_B	&kp DE_C	&kp DE_D	&kp DE_E	&kp DE_F	SPLIT_ROW_ONE_NONES		&kp DE_G   &kp DE_H   &kp DE_I    &kp DE_J   &kp DE_K	&kp DE_L
+				&none	&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S			&layer_media_kp LAYER_ID_MEDIA ARDUX_BASE_T		&kp ARDUX_BASE_R	&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A	&kp DE_MINUS	SPLIT_ROW_ONE_NONES		&kp DE_MINUS    &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A    &kp ARDUX_BASE_R   &layer_media_kp LAYER_ID_MEDIA ARDUX_BASE_T    &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S	&none
 				BIG_BETWEEN_ROW_ONE_TWO_NONES
-				&kp DE_M	&kp DE_N	&kp DE_O	&kp DE_P	&kp DE_Q	&kp DE_R	SPLIT_ROW_TWO_NONES		&kp DE_S   &kp DE_T   &kp DE_U    &kp DE_V	 &kp DE_W	&kp DE_X
+				&none	&layer_navigation_kp LAYER_ID_NAVIGATION ARDUX_BASE_O	&layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I		&kp ARDUX_BASE_Y	&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E					&sk LSHFT		SPLIT_ROW_TWO_NONES		&sk LSHFT       &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                  &kp ARDUX_BASE_Y	&layer_copy_kp LAYER_ID_COPY ARDUX_BASE_I      &layer_navigation_kp LAYER_ID_NAVIGATION ARDUX_BASE_O &none
 				BIG_BETWEEN_ROW_TWO_THREE_NONES
-				&kp DE_Y	&kp DE_Z	&kp DE_A	&kp DE_B	&kp DE_C	&kp DE_D	SPLIT_ROW_THREE_NONES		&kp DE_E   &kp DE_F   &kp DE_G    &kp DE_H   &kp DE_I	&kp DE_J
+				&none	&ctrl_alt_kp LALT LCTRL									&kp DE_AT										&kp DEL				&kp DE_EQUAL													&kp TAB			SPLIT_ROW_THREE_NONES	&kp TAB			&kp DE_EQUAL                                                	&kp DEL				&kp DE_AT                                      &ctrl_alt_kp LALT LCTRL	&none
 				BIG_BETWEEN_ROW_THREE_THUMBS
-				&kp DE_K			&kp DE_L		&kp DE_M	SPLIT_ROW_THUMB_NONES	&kp DE_N		&kp DE_O		&kp DE_P
+				&mo LAYER_ID_BIG_SYM			&kp SPACE		&kp ENTER	SPLIT_ROW_THUMB_NONES	&kp ENTER		&kp SPACE		&mo LAYER_ID_BIG_SYM
 				BIG_TRAILING_NONES
 			>;
 		};
