@@ -119,7 +119,7 @@
 #define LAYER_ID_QWERTY 10
 
 
-#define create_combos(MACRO_KEY_A, MACRO_KEY_R, MACRO_KEY_T, MACRO_KEY_S, MACRO_KEY_E, MACRO_KEY_Y, MACRO_KEY_I, MACRO_KEY_O) { \
+#define create_combos(MACRO_KEY_A, MACRO_KEY_R, MACRO_KEY_T, MACRO_KEY_S, MACRO_KEY_E, MACRO_KEY_Y, MACRO_KEY_I, MACRO_KEY_O) \
 	/***************************************** \
 	* Standard ARDUX combo definitions \
 	* These should NOT be changed and are global in scope \
@@ -241,7 +241,7 @@
 			}; \
 		}; \
 	}; \
-}
+
 /***************************************** \
  * Standard ARDUX layer activation definitions \
  * These should NOT be changed and are global in scope \
