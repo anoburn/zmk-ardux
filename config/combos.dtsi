@@ -244,54 +244,53 @@
 		#if defined KEY_A_RIGHT && defined KEY_R_RIGHT && defined KEY_T_RIGHT && defined KEY_S_RIGHT && defined KEY_E_RIGHT && defined KEY_Y_RIGHT && defined KEY_I_RIGHT && defined KEY_O_RIGHT
 		create_base_combos(KEY_A_RIGHT, KEY_R_RIGHT, KEY_T_RIGHT, KEY_S_RIGHT, KEY_E_RIGHT, KEY_Y_RIGHT, KEY_I_RIGHT, KEY_O_RIGHT);
 		#endif
-	}; \
-\
-	macros { \
-		m_sch: m_sch { \
-			compatible = "zmk,behavior-macro"; \
-	#binding-cells = <0>; \
-	bindings = <&kp S &kp C &kp H>; \
-	display-name = "M_SCH"; \
-		}; \
-	}; \
-}; \
+	};
 
-/***************************************** \
- * Standard ARDUX layer activation definitions \
- * These should NOT be changed and are global in scope \
- *****************************************/ \
-/ { \
-	behaviors { \
-		layer_base_kp: layer_base_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_base_kp"; \
-						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; \
-						bindings = <&mo>, <&kp>; }; \
-		layer_numbers_kp: layer_numbers_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_numbers_kp"; \
-						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; \
-						bindings = <&mo>, <&kp>; }; \
-		layer_symbols_kp: layer_symbols_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_symbols_kp"; \
-						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; \
-						bindings = <&mo>, <&kp>; }; \
-		layer_parentheticals_kp: layer_parentheticals_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_parentheticals_kp"; \
-						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; \
-						bindings = <&mo>, <&kp>; }; \
-		layer_navigation_kp: layer_navigation_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_navigation_kp"; \
-						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; \
-						bindings = <&mo>, <&kp>; }; \
-		layer_media_kp: layer_media_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_media_kp"; \
-						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; \
-						bindings = <&mo>, <&kp>; }; \
-		layer_custom_kp: layer_custom_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_custom_kp"; \
-						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; \
-						bindings = <&mo>, <&kp>; }; \
-		ctrl_alt_kp: ctrl_alt_kp { compatible = "zmk,behavior-hold-tap"; display-name = "ctrl_alt_kp"; \
-						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; \
-						bindings = <&sk>, <&sk>; }; \
-		layer_copy_kp: layer_copy_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_copy_kp"; \
-						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; \
-						bindings = <&mo>, <&kp>; }; \
-		mht: mod_hold_tap { compatible = "zmk,behavior-hold-tap"; display-name = "ctrl"; #binding-cells = <2>; \
-						tapping-term-ms = <400>; flavor = "hold-preferred"; bindings = <&kp>, <&sk>; \
-						hold-while-undecided-linger;}; \
-	}; \
-}; \
+	macros {
+		m_sch: m_sch {
+			compatible = "zmk,behavior-macro";
+	#binding-cells = <0>;
+	bindings = <&kp S &kp C &kp H>;
+	display-name = "M_SCH";
+		};
+	};
+};
 
+/*****************************************
+ * Standard ARDUX layer activation definitions
+ * These should NOT be changed and are global in scope
+ *****************************************/
+/ {
+	behaviors {
+		layer_base_kp: layer_base_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_base_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		layer_numbers_kp: layer_numbers_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_numbers_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		layer_symbols_kp: layer_symbols_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_symbols_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		layer_parentheticals_kp: layer_parentheticals_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_parentheticals_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		layer_navigation_kp: layer_navigation_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_navigation_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		layer_media_kp: layer_media_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_media_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		layer_custom_kp: layer_custom_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_custom_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		ctrl_alt_kp: ctrl_alt_kp { compatible = "zmk,behavior-hold-tap"; display-name = "ctrl_alt_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&sk>, <&sk>; };
+		layer_copy_kp: layer_copy_kp { compatible = "zmk,behavior-hold-tap"; display-name = "layer_copy_kp";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+						bindings = <&mo>, <&kp>; };
+		mht: mod_hold_tap { compatible = "zmk,behavior-hold-tap"; display-name = "ctrl"; #binding-cells = <2>;
+						tapping-term-ms = <400>; flavor = "hold-preferred"; bindings = <&kp>, <&sk>;
+						hold-while-undecided-linger;};
+	};
+};
