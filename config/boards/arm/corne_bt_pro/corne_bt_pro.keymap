@@ -6,16 +6,29 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+// LEFT HALF
 // ARTS Row
-#define KEY_A 9
-#define KEY_R 10
-#define KEY_T 11
-#define KEY_S 12
+#define KEY_A_LEFT 4
+#define KEY_R_LEFT 3
+#define KEY_T_LEFT 2
+#define KEY_S_LEFT 1
 // EYIO Row
-#define KEY_E 23
-#define KEY_Y 24
-#define KEY_I 25
-#define KEY_O 26
+#define KEY_E_LEFT 18
+#define KEY_Y_LEFT 17
+#define KEY_I_LEFT 16
+#define KEY_O_LEFT 15
+
+// RIGHT HALF
+// ARTS Row
+#define KEY_A_RIGHT 9
+#define KEY_R_RIGHT 10
+#define KEY_T_RIGHT 11
+#define KEY_S_RIGHT 12
+// EYIO Row
+#define KEY_E_RIGHT 23
+#define KEY_Y_RIGHT 24
+#define KEY_I_RIGHT 25
+#define KEY_O_RIGHT 26
 // Big ardux F1-12 layer keys for combo
 #define KEY_F_TOP 0
 #define KEY_F_BOTTOM 6
