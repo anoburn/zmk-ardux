@@ -235,14 +235,14 @@
 		#endif
 
 		#if defined KEY_A && defined KEY_R && defined KEY_T && defined KEY_S && defined KEY_E && defined KEY_Y && defined KEY_I && defined KEY_O
-		create_base_combos(KEY_A, KEY_R, KEY_T, KEY_S, KEY_E, KEY_Y, KEY_I, KEY_O);
+		create_base_combos(KEY_A, KEY_R, KEY_T, KEY_S, KEY_E, KEY_Y, KEY_I, KEY_O)
 		#endif
 
 		#if defined KEY_A_LEFT && defined KEY_R_LEFT && defined KEY_T_LEFT && defined KEY_S_LEFT && defined KEY_E_LEFT && defined KEY_Y_LEFT && defined KEY_I_LEFT && defined KEY_O_LEFT
-		create_base_combos(KEY_A_LEFT, KEY_R_LEFT, KEY_T_LEFT, KEY_S_LEFT, KEY_E_LEFT, KEY_Y_LEFT, KEY_I_LEFT, KEY_O_LEFT);
+		create_base_combos(KEY_A_LEFT, KEY_R_LEFT, KEY_T_LEFT, KEY_S_LEFT, KEY_E_LEFT, KEY_Y_LEFT, KEY_I_LEFT, KEY_O_LEFT)
 		#endif
 		#if defined KEY_A_RIGHT && defined KEY_R_RIGHT && defined KEY_T_RIGHT && defined KEY_S_RIGHT && defined KEY_E_RIGHT && defined KEY_Y_RIGHT && defined KEY_I_RIGHT && defined KEY_O_RIGHT
-		create_base_combos(KEY_A_RIGHT, KEY_R_RIGHT, KEY_T_RIGHT, KEY_S_RIGHT, KEY_E_RIGHT, KEY_Y_RIGHT, KEY_I_RIGHT, KEY_O_RIGHT);
+		create_base_combos(KEY_A_RIGHT, KEY_R_RIGHT, KEY_T_RIGHT, KEY_S_RIGHT, KEY_E_RIGHT, KEY_Y_RIGHT, KEY_I_RIGHT, KEY_O_RIGHT)
 		#endif
 	};
 
