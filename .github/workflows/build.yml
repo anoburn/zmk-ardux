@@ -67,6 +67,8 @@ jobs:
             shield: cradio_ardux_right
           - board: nice_nano_v2
             shield: cradio_ardux_thumb_right
+          - board: corne_choc_pro_right
+          - board: corne_choc_pro_left
     steps:
       - name: Checkout
         uses: actions/checkout@v4
