@@ -1,0 +1,51 @@
+/*
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+// LEFT HALF
+// ARTS Row
+#define KEY_A_LEFT 4
+#define KEY_R_LEFT 3
+#define KEY_T_LEFT 2
+#define KEY_S_LEFT 1
+// EYIO Row
+#define KEY_E_LEFT 18
+#define KEY_Y_LEFT 17
+#define KEY_I_LEFT 16
+#define KEY_O_LEFT 15
+
+// RIGHT HALF
+// ARTS Row
+#define KEY_A_RIGHT 9
+#define KEY_R_RIGHT 10
+#define KEY_T_RIGHT 11
+#define KEY_S_RIGHT 12
+// EYIO Row
+#define KEY_E_RIGHT 23
+#define KEY_Y_RIGHT 24
+#define KEY_I_RIGHT 25
+#define KEY_O_RIGHT 26
+// Big ardux F1-12 layer keys for combo
+#define KEY_F_TOP 0
+#define KEY_F_BOTTOM 6
+
+// Define Offsets
+#define LEADING_NONES NONE(0,0,1)
+#define MIDDLE_NONES NONE(0, 0, 1)
+#define TRAILING_NONES NONE(0, 0, 8)
+#define BIG_LEADING_NONES NONE(0, 0, 0)
+#define BIG_BETWEEN_ROW_ONE_TWO_NONES NONE(0, 0, 0)
+#define BIG_BETWEEN_ROW_TWO_THREE_NONES NONE(0, 0, 0)
+#define BIG_BETWEEN_ROW_THREE_THUMBS NONE(0, 0, 0)
+#define BIG_TRAILING_NONES NONE(0, 0, 0)
+#define SPLIT_ROW_ONE_NONES NONE(0, 0, 2)
+#define SPLIT_ROW_TWO_NONES NONE(0, 0, 2)
+#define SPLIT_ROW_THREE_NONES NONE(0, 0, 0)
+#define SPLIT_ROW_THUMB_NONES NONE(0, 0, 0)
+
+// Include main ardux.io keymap
+#include "../../../ardux_two_handed.dtsi"

@@ -1,0 +1,25 @@
+if BOARD_CORNE_CHOC_PRO_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if BOARD_CORNE_CHOC_PRO_LEFT || BOARD_CORNE_CHOC_PRO_RIGHT
+
+config BOARD
+	default "corne_choc_pro"
+
+config I2C
+	default y
+
+config ZMK_SPLIT
+    default y
+
+config BT_CTLR
+	default BT
+
+config ZMK_MAX17048
+    default y
+
+endif
