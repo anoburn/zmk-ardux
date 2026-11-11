@@ -1,4 +1,6 @@
 
+#define USE_SPLIT_COMBOS 1
+
 #include "combos.dtsi"
 
 /*****************************************
@@ -93,6 +95,80 @@
 				&none	&none			&none			&none			&none			&none	SPLIT_ROW_THREE_NONES	&none	&none			&none			&none			&none			&none
 				BIG_BETWEEN_ROW_THREE_THUMBS
 														&bootloader		&sys_reset		&none	SPLIT_ROW_THREE_NONES	&none	&sys_reset		&bootloader
+				BIG_TRAILING_NONES
+			>;
+		};
+		// TODO
+		mouse {
+			display-name = "Mouse";
+			bindings = <
+				BIG_LEADING_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_ONE_NONES		&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_ONE_TWO_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_TWO_NONES		&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_TWO_THREE_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_THREE_NONES	&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_THREE_THUMBS
+										&none	&none	&none	SPLIT_ROW_THUMB_NONES	&none	&none	&none
+				BIG_TRAILING_NONES
+			>;
+		};
+		// TODO
+		custom {
+			display-name = "Custom";
+			bindings = <
+				BIG_LEADING_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_ONE_NONES		&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_ONE_TWO_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_TWO_NONES		&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_TWO_THREE_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_THREE_NONES	&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_THREE_THUMBS
+										&none	&none	&none	SPLIT_ROW_THUMB_NONES	&none	&none	&none
+				BIG_TRAILING_NONES
+			>;
+		};
+		// TODO
+		big_sym {
+			display-name = "Symbol";
+			bindings = <
+				BIG_LEADING_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_ONE_NONES		&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_ONE_TWO_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_TWO_NONES		&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_TWO_THREE_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_THREE_NONES	&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_THREE_THUMBS
+										&none	&none	&none	SPLIT_ROW_THUMB_NONES	&none	&none	&none
+				BIG_TRAILING_NONES
+			>;
+		};
+		// TODO
+		big_function {
+			display-name = "Function";
+			bindings = <
+				BIG_LEADING_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_ONE_NONES		&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_ONE_TWO_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_TWO_NONES		&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_TWO_THREE_NONES
+				&none	&none	&none	&none	&none	&none	SPLIT_ROW_THREE_NONES	&none	&none	&none	&none	&none	&none
+				BIG_BETWEEN_ROW_THREE_THUMBS
+										&none	&none	&none	SPLIT_ROW_THUMB_NONES	&none	&none	&none
+				BIG_TRAILING_NONES
+			>;
+		};
+		qwerty {
+			display-name = "Qwerty";
+			bindings = <
+				BIG_LEADING_NONES
+				&gresc		&kp Q	&kp W	&kp E		&kp R		&kp T		SPLIT_ROW_ONE_NONES		&kp Y		&kp U		&kp I		&kp O		&kp P		&kp BACKSPACE
+				BIG_BETWEEN_ROW_ONE_TWO_NONES
+				&kp TAB		&kp A	&kp S	&kp D		&kp F		&kp G		SPLIT_ROW_TWO_NONES		&kp H		&kp J		&kp K		&kp L		&kp SEMI	&kp ENTER
+				BIG_BETWEEN_ROW_TWO_THREE_NONES
+				&sk LCTRL	&kp Z	&kp X	&kp C		&kp V		&kp B		SPLIT_ROW_THREE_NONES	&kp N		&kp M		&kp COMMA	&kp PERIOD	&kp SLASH	&kp SQT
+				BIG_BETWEEN_ROW_THREE_THUMBS
+											&kp LCTRL	&kp LSHIFT	&kp SPACE	SPLIT_ROW_THUMB_NONES	&kp SPACE	&kp RSHIFT	&kp RCTRL
 				BIG_TRAILING_NONES
 			>;
 		};
